@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #101c2c;
+  --color-charcoal: #202a35;
+  --color-warm-white: #fafaf7;
+  --color-orange: #f47732;
+  --color-slate: #687586;
+  --color-soft-gray: #e8ebef;
+  --font-sans: "Manrope", Arial, sans-serif;
+  --font-display: "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+html { scroll-behavior: smooth; background: #fafaf7; }
+body { margin: 0; min-width: 320px; background: #fafaf7; }
+button, input, select, textarea { font: inherit; }
+::selection { background: #f47732; color: white; }
+@keyframes heroReveal { from { opacity: 0; transform: scale(1.045); } to { opacity: 1; transform: scale(1); } }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
